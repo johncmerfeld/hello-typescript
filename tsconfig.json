@@ -2,14 +2,15 @@
   "compileOnSave": true,
   "compilerOptions": {
     "lib": [ "es2015", "dom" ],
-    "target": "es5",
+    "target": "es6",
     "module": "commonjs",
-    "outDir": "public/js",
+    "outDir": "dist/js",
     "rootDir": "src",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"]
+  "include": ["src/**/*"],
+  "exclude": ["src/types/*.ts", "node_modules"]
 }
